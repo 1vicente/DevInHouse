@@ -5,7 +5,8 @@
 body {
     background-color: azure;
     font-family: Arial;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -44,7 +45,6 @@ p {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     padding: 4px;
-
 }
   
   /* Links inside the navbar */
@@ -84,3 +84,13 @@ p {
     flex: 40%;
     padding: 5px;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    bottom: 0;
+    height: 60px;
+    margin-top: 48px;
+  }
