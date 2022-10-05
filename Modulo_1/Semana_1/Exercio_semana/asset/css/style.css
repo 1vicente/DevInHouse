@@ -1,0 +1,14 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
