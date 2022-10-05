@@ -12,3 +12,13 @@ h1 {
 p {
     font-size: 14px;
 }
+
+#botao-seta {
+    height: 130px;
+    background-color: rgb(224, 223, 223); 
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+}
