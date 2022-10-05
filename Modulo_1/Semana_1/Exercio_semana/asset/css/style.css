@@ -3,11 +3,17 @@ body {
 }
 
 h1 {
-    background-image: url(https://devinhouse.tech/wp-content/uploads/sites/2/2021/10/bg-brasil.jpg);
     font-family: Arial;
     font-size: 20px;
     color: blue;
     text-align: center;
+    padding: 10px;
+}
+
+#h1-title {
+    background-image: url(https://devinhouse.tech/wp-content/uploads/sites/2/2021/10/logo-devinhouse.png);
+    background-color: rgb(224, 223, 223);
+    background-repeat: no-repeat;
 }
 
 p {
