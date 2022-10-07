@@ -1,0 +1,140 @@
+.debug {
+    border: 2px solid red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 255, 255);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    background-image: url(https://devinhouse.tech/wp-content/uploads/sites/2/2021/10/logo-devinhouse.png);
+    background-color: #1C6EA4;
+    box-shadow: 2px 2px 0px 1px rgba(143,143,143,0.78);
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    padding: 4px;
+    height: 42px;
+    margin: 0;
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+
+#botao-seta {
+    height: 130px;
+    background-color: rgb(224, 223, 223); 
+    border-radius: 20px;
+    border-color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+header {
+    padding: 0 200px;
+    background: #333 linear-gradient(rgb(31, 31, 31),#000000);
+    min-height: 65px;
+    min-width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 6px 11px 1px rgba(143,143,143,0.16);
+}
+
+/* The navigation bar */
+.navbar {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background: #333 linear-gradient(rgb(31, 31, 31),#000000);
+ /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding: 4px;
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    display: flex;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 2px;
+    padding: 18px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+  /* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+main {
+    padding: 0 10%;
+    background: #E6E6E9;
+    position: relative;
+    min-height: calc(100vh - 120px);
+    margin-top: 70px;
+    width: 100%;
+}
+
+.main-conteudo {
+    padding: 12px 8px 12px 8px;
+    background-color: #F4F4F6;
+    min-height: calc(100vh - 120px);
+
+}
+
+
+.column-logo {
+    align-self: center;
+    min-width: 100px;
+    padding: 4px;
+}
+
+.column-botoes {
+    display: flex;
+    align-self: center;
+    min-width: 100px;
+    padding: 0 13px 0 0;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(25,29,50,1) 95%, rgba(251,254,249,1) 100%);    color: white;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px -6px 11px 1px rgba(0,0,0,0.16)
+  }
+
+footer a {
+    font-family: Arial;
+    font-size: 12px;
+}
