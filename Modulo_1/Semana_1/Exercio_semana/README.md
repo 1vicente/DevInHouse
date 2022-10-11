@@ -22,7 +22,7 @@ No mesmo documento, adicione uma linha horizontal entre o título e o parágrafo
 
 Após isso, insira algum emoji de sua escolha no parágrafo.
 
-****Dicas**s**: \
+**Dicas**: \
 [📙 Emojipedia — 😃 Home of Emoji Meanings 💁👌🎍😍](https://emojipedia.org/)
 -> Codepoints -> “U+” por “&#x”
 [🌐 ISO language codes | Andiamo! The Language Professionals](https://www.andiamo.co.uk/resources/iso-language-codes)
