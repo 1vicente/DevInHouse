@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <header class="">
+        <header>
             <div>
                 <p>DevIn[Philips]</p>
             </div>
@@ -18,16 +18,18 @@
             </div>
         </header>
         <section class="conteudotCard">
+            <div class="line"></div>
             <div class="conteudoAtividade">
-                <p>conteudo</p>
+                <label>Digite a sua idade</label>
+                <input type="number" name="idade" id="idadeHtml" onkeypress="return onlyNumberKey(event)" min="0" >
             </div>
             <div class="botoesAtividade">
-                <button class="btn-grad">
-                    butao
+                <button class="btn-grad" onclick=calculaFaixaIdade()>
+                    Descubra
                 </button>
             </div>
             <div class="retornoAtividade">
-                <p>retorno</p>
+                <p id="retornoJs"></p>
             </div>
         </section>
         <footer class="">
@@ -35,5 +37,5 @@
         </footer>
     </main>
 </body>
-<script src="assets/scripts/"></script>
+<script src="assets/scripts/main.js"></script>
 </html>
