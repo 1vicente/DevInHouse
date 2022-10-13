@@ -19,110 +19,63 @@ body {
     justify-content: center;
 }
 
-header {
-    display: flex;
-    width: 100%; 
-    height: 30px;
-    font-size: 24px;
-    justify-content: space-between;
-}
-
 main {
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 500px;
-    background-color: rgba(255, 255, 255, 0.774) ;
-    border-radius: 14px;
-    box-shadow: 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%), 0px 11px 15px -7px rgb(0 0 0 / 20%);
-    padding: 18px 15px;
-}
-
-footer {
-    height: 14px;
-}
-
-footer p {
-    font-size: 12px;
-    text-align: center;
-}
-
-input {
-    border-radius: 8px;
-    border-width: 0;
-    padding: 4px 10px;
-    height: 25px;
-}
-
-.line {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(218,218,218,1) 25%, rgba(138,138,138,1) 50%, rgba(218,218,218,1) 75%, rgba(255,255,255,0) 100%); 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
     width: 100%;
-    box-sizing: content-box;
-    margin-top: 10px;
-    height: 2px;
+    padding: 50px;
 
 }
+
+
 
 .conteudotCard {
+    box-shadow: 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%), 0px 11px 15px -7px rgb(0 0 0 / 20%);
+    background-color: rgba(255, 255, 255, 0.774) ;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    padding: 18px 15px;
+    margin: 15px;
+}
+
+.conteudotCard a {
+    ;
+}
+
+.atividade {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.conteudoAtividade {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.conteudoAtividade label {
-    margin: 4px;
-}
-
-.botoesAtividade {
-    height: 60px ;
-}
-
-.retornoAtividade {
-    height: 28%;
-    display: flex;
-    flex-direction: column;
-    /* font-size: 24px; */
-}
-
-.retornoAtividade p {
-    padding: 12px;
+    height: 80%;
     text-align: center;
+    padding-top: 30%;
+    font-size: 28px;
+
 }
 
-.btn-grad {
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
-    margin: 10px;
-    padding: 8px 12px;
+.github {
+    width: 100%;
     text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 8px;
-    height: 20px;
-    width: 70px;
-    font-size: 12px;
-    border-width: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: content-box;
+
 }
 
-.btn-grad:hover {
-    background-position: right center;
-    color: #fff;
+
+.atividade a {
     text-decoration: none;
-}
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  
+.atividade a:hover {
+    box-shadow: inset 150px 0 0 0 #54b3d6;
+    color: white;
+  }
