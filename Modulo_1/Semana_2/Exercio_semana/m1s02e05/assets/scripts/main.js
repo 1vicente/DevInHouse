@@ -7,14 +7,19 @@ function onlyNumberKey(evt) {
     return true;
 }
 
-function calculaFaixaIdade() {
-    var idade = parseInt(document.getElementById("idadeHtml").value)
+function entradaNumero() {
+    var entradaNumeros = parseInt(document.getElementById("entradaNumeroHtml").value)
     var resultado = document.getElementById("retornoJs")
+    var par = 0
+    var impar = 0
 
-    if (idade <= 15 ) 
-        resultado.innerHTML = "Indivíduos de até 15 anos são considerados jovens.";
-    else if (idade >= 16 && idade <= 64)
-        resultado.innerHTML = "Indivíduos com idade entre 16 até 64 anos são considerados adultos.";
-    else if (idade >= 65)
-        resultado.innerHTML = "Indivíduos de 65 anos em diante são considerados idosos.";    
+    for (var i = 0; i <= entradaNumeros; i++) {
+        if ( i % 2 == 0) {
+            console.log("Eh par" + i)
+            par++
+        } else {
+            impar++
+        }
+    }
+    resultado.innerHTML = `Quantidade de números pares: ${par} <br> Quantidade de números ímpares: ${impar}` 
 }
