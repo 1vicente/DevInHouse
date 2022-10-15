@@ -24,4 +24,5 @@ function calculaTabuada() {
         resultado2.innerHTML += numeroTabuada + "X" + controle + "=" + multiplicacao + "<br>"; 
         controle ++
     }
+    (controle >= 11) ? controle = 0: true ;
 }
