@@ -24,6 +24,7 @@ function somaNumeros () {
         soma += parseInt(storageNumberos[i])
     }
     resultado.innerHTML = `O resultado da soma foi: ${soma}`
+    soma = 0
     storageNumberos = []
 }
 
