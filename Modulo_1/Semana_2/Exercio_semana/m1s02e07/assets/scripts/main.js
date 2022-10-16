@@ -26,7 +26,5 @@ function estacaoDoAno() {
         resultado.innerHTML = "De 22/03 à 21/06 é outono";
     } else {
         resultado.innerHTML = "De 22/12 à 21/03 é verão";
-
     }
-     resultado.innerHTML = "Indivíduos de 65 anos em diante são considerados idosos.";    
 }
