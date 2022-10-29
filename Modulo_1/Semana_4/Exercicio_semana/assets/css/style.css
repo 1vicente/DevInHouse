@@ -18,12 +18,13 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-header {
+main header {
     display: flex;
     width: 100%; 
     height: 30px;
@@ -35,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 500px;
+    width: 800px;
     background-color: rgba(255, 255, 255, 0.774) ;
     border-radius: 14px;
     box-shadow: 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%), 0px 11px 15px -7px rgb(0 0 0 / 20%);
@@ -58,6 +59,39 @@ input {
     height: 25px;
 }
 
+
+.footer-pagina {
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.301) ;
+    width: 100%;
+    padding: 5px;
+}
+
+.menu-container {
+    display: flex;
+    padding: 15px 20%;
+    height: 150px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.774) ;
+}
+
+.menu-logo {
+    height: 125px;
+}
+
+.menu-logo img {
+    border-radius: 20px;
+    height: 100%;
+}
+
+.menu-nome p {
+    font-size: 28px;
+    height: 50px;
+}
+
+
 .line {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(218,218,218,1) 25%, rgba(138,138,138,1) 50%, rgba(218,218,218,1) 75%, rgba(255,255,255,0) 100%); 
@@ -65,7 +99,6 @@ input {
     box-sizing: content-box;
     margin-top: 10px;
     height: 2px;
-
 }
 
 .conteudotCard {
@@ -132,14 +165,3 @@ input {
 }
 
 /* Fim Padrão */
-
-input[type="radio"] {
-    background-color: #fff;
-    width: 20px;
-}
-
-.opcoes {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
