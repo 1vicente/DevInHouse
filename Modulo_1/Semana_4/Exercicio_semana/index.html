@@ -35,11 +35,11 @@
             <div class="conteudoAtividade ">
                 <form class="forms" onsubmit=event.preventDefault()>
                     <label for="nomeHtml">Nome</label>
-                    <input type="text" name="nomeHtml" id="nomeHtml">
+                    <input type="text" name="nomeHtml" id="nomeHtml" >
                     <label for="cpfHtml">CPF</label>
-                    <input type="number" name="cpfHtml" id="cpfHtml">
+                    <input type="text" name="cpfHtml" id="cpfHtml" placeholder="999.999.999-99" pattern="(\d{3}.){2}\d{3}-\d{2}">
                     <label for="celularHtml">Celular</label>
-                    <input type="number" name="celularHtml" id="celularHtml">
+                    <input type="text" name="celularHtml" id="celularHtml" placeholder="(48) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}">
                     <label for="senhaHtml">Senha</label>
                     <input type="password" name="senhaHtml" id="senhaHtml">
                     <label for="senhaCHtml">Confirme sua Senha</label>
@@ -67,7 +67,7 @@
                     <input type="number" name="contaHtml" id="contaHtml">
                     <label for="senhaDHtml">Senha</label>
                     <input type="password" name="senhaDHtml" id="senhaDHtml">
-                    <div class="botoesAtividade ">
+                    <div class="botoesAtividade botoesAtividadeOperacoes ">
                         <button type="submit" class="btn-grad" id="enviar-operacao">
                             Enviar
                         </button>
