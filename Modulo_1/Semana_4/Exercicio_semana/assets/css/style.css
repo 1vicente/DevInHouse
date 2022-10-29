@@ -110,11 +110,12 @@ input {
 }
 
 .conteudoAtividade {
-    height: 80%;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .conteudoAtividade label {
@@ -129,7 +130,7 @@ input {
 }
 
 .retornoAtividade {
-    height: 100px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     /* font-size: 24px; */
@@ -170,7 +171,7 @@ input {
 
 /* Fim Padrão */
 
-.criar-conta {
+.forms {
     display: flex;
     flex-direction: column;
     width: 45%;
