@@ -30,30 +30,54 @@
                 <p>[M1S04]</p>
             </div>
         </header>
-        <section class="conteudotCard">
-            <div class="line"></div>
-            <div class="conteudoAtividade">
-                <div class="criar-conta">
+        <div class="line"></div>
+        <section class="conteudotCard ">
+            <div class="conteudoAtividade ">
+                <form class="forms" onsubmit=event.preventDefault()>
                     <label for="nomeHtml">Nome</label>
-                    <input type="text" name="nomeHtml" id="nomeHtml"/>
+                    <input type="text" name="nomeHtml" id="nomeHtml">
                     <label for="cpfHtml">CPF</label>
                     <input type="number" name="cpfHtml" id="cpfHtml">
                     <label for="celularHtml">Celular</label>
                     <input type="number" name="celularHtml" id="celularHtml">
                     <label for="senhaHtml">Senha</label>
                     <input type="password" name="senhaHtml" id="senhaHtml">
-                    <label for="celularCHtml">Confirme sua Senha</label>
-                    <input type="password" name="senhaCHtml" id="senhaCHtml" />
+                    <label for="senhaCHtml">Confirme sua Senha</label>
+                    <input type="password" name="senhaCHtml" id="senhaCHtml">
                     <div class="botoesAtividade">
-                        <button type="submit" class="btn-grad" id="enviar">
+                        <button type="submit" class="btn-grad" id="enviar-cadastro">
                             Enviar
                         </button>
                         <button type="reset" class="btn-grad">
                             Limpar
                         </button>
                     </div>
-                </div>
-            <div class="retornoAtividade">
+                </form>
+                <form class="forms" onsubmit=event.preventDefault()>
+                    <label for="operacaoHtml">Operação</label>
+                    <select name="operacaoHtml" id="operacaoHtml">
+                        <option value="selecione">Selecione a operação</option>
+                        <option value="saque">Saque</option>
+                        <option value="deposito">Depósito</option>
+                        <option value="consulta">Consulta</option>
+                    </select>
+                    <label for="valorHtml">Valor</label>
+                    <input type="number" name="valorHtml" id="valorHtml">
+                    <label for="contaHtml">Conta</label>
+                    <input type="number" name="contaHtml" id="contaHtml">
+                    <label for="senhaDHtml">Senha</label>
+                    <input type="password" name="senhaDHtml" id="senhaDHtml">
+                    <div class="botoesAtividade ">
+                        <button type="submit" class="btn-grad" id="enviar-operacao">
+                            Enviar
+                        </button>
+                        <button type="reset" class="btn-grad">
+                            Limpar
+                        </button>
+                    </div>
+                </form> 
+            </div>
+            <div class="retornoAtividade ">
                 <p id="retornoJs"></p>
             </div>
         </section>
