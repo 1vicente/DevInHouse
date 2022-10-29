@@ -10,7 +10,6 @@ const recebeDados = () => {
     cadastroClientesTemp.saldo = 0
 
     cadastroClientes.push(cadastroClientesTemp)
-    console.log(cadastroClientes)
 
     resultado.innerHTML = `Sua conta foi criada com o ID ${cadastroClientesTemp.id}`
 }
@@ -25,6 +24,10 @@ const operacao = (x) => {
             break;
 
         case "consulta":
+            let infoCliente =  validaConta(cadastroClientes)
+            let saldo = infoCliente.saldo
+            let id = infoCliente.id
+            resultado.innerHTML = `Saldo da conta ${id}: R$ ${saldo}`
             break;
 
         default:
@@ -38,11 +41,8 @@ const validaConta = (clientes) => {
 
     let encontraConta = clientes.find(item => item.id == idConta)
     if (encontraConta.id == idConta && encontraConta.senha == senhaConta) {
-        console.log("Entrou aqui")
-        console.log(encontraConta)
-        return encontraConta.saldo
+        return encontraConta
     } else {
-        let resultado = document.getElementById("retornoJs")
         resultado.innerHTML = `Conta e/ou senha inválida`
     }
 
@@ -50,6 +50,7 @@ const validaConta = (clientes) => {
 
 
 
+let resultado = document.getElementById("retornoJs")
 
 let cadastroClientes = [{id: 1, senha: 1, saldo: 0}]
 
