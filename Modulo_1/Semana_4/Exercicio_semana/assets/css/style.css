@@ -106,12 +106,12 @@ input {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .conteudoAtividade {
-    height: 60%;
+    height: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,3 +165,11 @@ input {
 }
 
 /* Fim Padrão */
+
+.criar-conta {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-height: 100%;
+    padding-top: 10px;
+}
