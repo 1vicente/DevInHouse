@@ -52,6 +52,13 @@ footer p {
     text-align: center;
 }
 
+select {
+    border-radius: 8px;
+    border-width: 0;
+    padding: 4px 10px;
+    height: 25px;
+}
+
 input {
     border-radius: 8px;
     border-width: 0;
@@ -128,6 +135,10 @@ input {
     justify-content: space-around;
     padding-top: 30px;
 }
+
+.botoesAtividadeOperacoes {
+    padding-top: 88px;
+} 
 
 .retornoAtividade {
     height: 50px;
