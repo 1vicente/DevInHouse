@@ -15,18 +15,30 @@ const recebeDados = () => {
 }
 
 const operacao = (x) => {
+    let infoCliente =  validaConta(cadastroClientes)
+    let saldo = infoCliente.saldo
+    let id = infoCliente.id
+    let valorHtml = parseInt(document.getElementById('valorHtml').value)
+    let indexCliente = cadastroClientes.findIndex(object => {return object.id === id;})
+    console.log(cadastroClientes)
     switch (x) {
         case "saque":
-            validaConta(cadastroClientes)
             break;
 
         case "deposito":
+
+            if (valorHtml > 0 ) {
+                infoCliente.saldo = valorHtml + saldo
+                cadastroClientes.splice(indexCliente, 1, infoCliente)
+                console.log(indexCliente)
+                console.log(cadastroClientes);
+                resultado.innerHTML = `Depósito efetuado com sucesso. Saldo atual da conta ${id}: R$ ${infoCliente.saldo}`
+            } else {
+                resultado.innerHTML = `O valor inserido é igual o menor que zero`
+            }
             break;
 
         case "consulta":
-            let infoCliente =  validaConta(cadastroClientes)
-            let saldo = infoCliente.saldo
-            let id = infoCliente.id
             resultado.innerHTML = `Saldo da conta ${id}: R$ ${saldo}`
             break;
 
