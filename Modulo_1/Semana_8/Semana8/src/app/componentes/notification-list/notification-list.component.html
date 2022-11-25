@@ -1,5 +1,5 @@
 <div class="list-group">
-    <a *ngFor="let elemento of notificacoes" class="list-group-item list-group-item-action " aria-current="true">
+    <a *ngFor="let elemento of notificacoes" [ngClass]="elemento.lido == true ? 'list-group-item list-group-item-action' : 'list-group-item list-group-item-action active'" aria-current="true">
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1">{{ elemento.titulo }}</h5>
         <small>{{ elemento.data }}</small>
