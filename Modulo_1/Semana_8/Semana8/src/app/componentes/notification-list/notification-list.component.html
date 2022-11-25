@@ -1,23 +1,23 @@
 <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Título 1</h5>
-        <small>3 days ago</small>
+        <h5 class="mb-1">{{ notificacoes[0].titulo }}</h5>
+        <small>{{ notificacoes[0].data }}</small>
       </div>
-      <p class="mb-1">subtitulo</p>
+      <p class="mb-1">{{ notificacoes[0].subtitulo }}</p>
     </a>
-    <a href="#" class="list-group-item list-group-item-action">
+    <a href="#" class="list-group-item list-group-item-action " aria-current="true">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Título 2</h5>
-        <small>3 days ago</small>
+        <h5 class="mb-1">{{ notificacoes[1].titulo }}</h5>
+        <small>{{ notificacoes[1].data }}</small>
       </div>
-      <p class="mb-1">subtitulo</p>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
+      <p class="mb-1">{{ notificacoes[1].subtitulo }}</p>
+    </a>    
+    <a href="#" class="list-group-item list-group-item-action " aria-current="true">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Título 3</h5>
-        <small>3 days ago</small>
+        <h5 class="mb-1">{{ notificacoes[2].titulo }}</h5>
+        <small>{{ notificacoes[2].data }}</small>
       </div>
-      <p class="mb-1">subtitulo</p>
+      <p class="mb-1">{{ notificacoes[2].subtitulo }}</p>
     </a>
 </div>
