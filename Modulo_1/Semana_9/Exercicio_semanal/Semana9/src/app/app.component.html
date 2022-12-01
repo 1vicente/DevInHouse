@@ -1,9 +1,12 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <div class="container">
   <div class="d-flex justify-content-center  align-items-center teste">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Formulario</h5>
-        <form onsubmit="event.preventDefault()">
+
+        <form>          
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" required>
@@ -20,6 +23,7 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Materia Obrigatória</label>
           </div>
+
           <label for="select" class="form-label">Professor(a)</label>
           <select class="form-select mb-5" id="select" aria-label="Default select example">
             <option selected disabled>Selecione o professor(a)</option>
@@ -29,9 +33,28 @@
             <option value="Claudia">Cláudia</option>
           </select>
 
-          <button type="submit" class="btn btn-primary">Salvar</button>
+          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Salvar</button>
         </form>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Salvo com Sucesso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Seu registro foi salvo com sucesso.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
