@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { LocalStorageService } from  'src/app/services/local-storage.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,10 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Semana9';
 
-  tituloPersonagem: string = '@Input Personagem';
-  imagemPersonagem: string = 'https://i.pinimg.com/originals/e4/34/2a/e4342a4e0e968344b75cf50cf1936c09.jpg';
-  atorPersonagem: string = '@Input Nome do Ator';
-  descPersonagem: string = '@Input Descrição do ator';
+  passHtml: string = '' 
+  emailHtml: string = '' 
 
+  objInfo: any = {}
+
+  constructor (private bigode:LocalStorageService) {
+
+  }
+
+  salvaLocalStorage(){
+    this.objInfo = {
+      email: this.emailHtml, 
+      senha: this.passHtml
+    }
+    console.log(this.objInfo)
+    this.bigode.tomedo(this.objInfo)
+  }
 
 }
