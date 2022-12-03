@@ -10,6 +10,4 @@ export class LocalStorageService {
   tomedo (x: object) {
     localStorage.setItem('Barriga', JSON.stringify(x))
   }
-
-  
 }

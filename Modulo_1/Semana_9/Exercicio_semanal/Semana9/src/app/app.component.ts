@@ -8,22 +8,14 @@ import { LocalStorageService } from  'src/app/services/local-storage.service'
 export class AppComponent {
   title = 'Semana9';
 
-  passHtml: string = '' 
-  emailHtml: string = '' 
-
-  objInfo: any = {}
+  retorno: string = ''
 
   constructor (private bigode:LocalStorageService) {
 
   }
 
-  salvaLocalStorage(){
-    this.objInfo = {
-      email: this.emailHtml, 
-      senha: this.passHtml
-    }
-    console.log(this.objInfo)
-    this.bigode.tomedo(this.objInfo)
+  buscaTexto (ablablublu: any) {
+    this.retorno=ablablublu
+    console.log('Pai', this.retorno)
   }
-
 }
