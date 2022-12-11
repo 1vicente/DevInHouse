@@ -1,2 +1,2 @@
 
-<button *ngFor="let item of botoes" type="button" class="btn btn-primary mb-2 mt-2">{{ item.botao }}</button>
+<button *ngFor="let item of botoes" (click)="filtro(item.link)" type="button" class="btn btn-primary mb-2 mt-2">{{ item.botao }}</button>

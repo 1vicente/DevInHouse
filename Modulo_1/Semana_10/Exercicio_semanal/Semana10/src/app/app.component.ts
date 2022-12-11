@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { FiltroComponent } from './componentes/filtro/filtro.component';
+
 @Component({
   selector: 'ntap-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Semana8';
+
+  action(link: any) {
+    console.log("Evento pai", link)
+    
+  }
 }
