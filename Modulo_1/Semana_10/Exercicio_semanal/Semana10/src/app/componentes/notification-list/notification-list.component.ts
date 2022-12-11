@@ -28,21 +28,21 @@ export class NotificationListComponent implements OnChanges{
   subtitulo: 'subtitulo3',
   data: 'data3',
   lido: false
-}]
-notificacoesFiltradas: any = [];
+  }]
+  notificacoesFiltradas: any = [];
 
  ngOnChanges(): void {
 
   if (this.cavalo == 'todos' || this.cavalo == '' ) {
-    this.notificacoesFiltradas=this.notificacoes
-  } else if (this.cavalo[0] == 'nao-lidos'){
-    // this.notificacoesFiltradas=[]
-    this.notificacoesFiltradas=this.notificacoes.filter(  (x) => x.lido==false)
-  } else if (this.cavalo == 'lidos'){
-    this.notificacoesFiltradas=[]
-    this.notificacoesFiltradas=this.notificacoes.filter( (x) => x.lido==true)
+      this.notificacoesFiltradas=this.notificacoes
+    } else if (this.cavalo[0] == 'nao-lidos'){
+      // this.notificacoesFiltradas=[]
+      this.notificacoesFiltradas=this.notificacoes.filter(  (x) => x.lido==false)
+    } else if (this.cavalo == 'lidos'){
+      this.notificacoesFiltradas=[]
+      this.notificacoesFiltradas=this.notificacoes.filter( (x) => x.lido==true)
+    }
   }
-}
 
   mensagemLida(x: boolean, index: number) {
     this.notificacoes[index].lido = true
