@@ -10,8 +10,5 @@ import { FiltroComponent } from './componentes/filtro/filtro.component';
 export class AppComponent {
   title = 'Semana8';
 
-  action(link: any) {
-    console.log("Evento pai", link)
-    
-  }
+
 }
