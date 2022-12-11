@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 @Component({
   selector: 'ntap-notification-list',
   templateUrl: './notification-list.component.html',
   styleUrls: ['./notification-list.component.scss']
 })
-export class NotificationListComponent {
+export class NotificationListComponent implements OnChanges{
+
+  @Input() cavalo: any = '';
+
   notificacoes = [{
     index: 0,
     titulo: 'teste1',
@@ -26,10 +29,22 @@ export class NotificationListComponent {
   data: 'data3',
   lido: false
 }]
+notificacoesFiltradas: any = [];
+
+ ngOnChanges(): void {
+
+  if (this.cavalo == 'todos' || this.cavalo == '' ) {
+    this.notificacoesFiltradas=this.notificacoes
+  } else if (this.cavalo[0] == 'nao-lidos'){
+    // this.notificacoesFiltradas=[]
+    this.notificacoesFiltradas=this.notificacoes.filter(  (x) => x.lido==false)
+  } else if (this.cavalo == 'lidos'){
+    this.notificacoesFiltradas=[]
+    this.notificacoesFiltradas=this.notificacoes.filter( (x) => x.lido==true)
+  }
+}
 
   mensagemLida(x: boolean, index: number) {
-    console.log(x, index)
     this.notificacoes[index].lido = true
-    console.log(this.notificacoes[index].lido)
   }
 }

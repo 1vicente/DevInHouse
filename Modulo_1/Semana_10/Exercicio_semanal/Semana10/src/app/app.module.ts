@@ -19,15 +19,22 @@ const rotas: Routes = [
   {
     path: 'inicio',
     component: HomeComponent,
-    // children: [{
-    //     path: 'todos',
-    //   },
-    //   {
-    //     path: 'nao-lidos',
-    //   },
-    //   {
-    //     path: 'lidos',
-    //   }  ]
+    children: [
+      {
+        path: 'todos', 
+        component: HomeComponent,
+        data: {link: 'todos'}
+      },
+      {
+        path: 'nao-lidos', 
+        component: HomeComponent,
+        data: {link: 'nao-lidos'}
+      },
+      {
+        path: 'lidos', 
+        component: HomeComponent,
+        data: {link: 'lidos'}
+      }]
   },
   {
     path: 'sobre',

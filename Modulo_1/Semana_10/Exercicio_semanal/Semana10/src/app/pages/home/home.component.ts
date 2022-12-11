@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  action(link: any) {
-    console.log("Evento pai", link)
-    
-  }
+  retornodoFiltro: any = '';
 
+  action(link: any) {
+    this.retornodoFiltro = link;
+  }
 }

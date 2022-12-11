@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ntap-filtro',
@@ -23,8 +24,10 @@ export class FiltroComponent {
 
   @Output() retornoFiltro = new EventEmitter<string>();
 
+  constructor(
+    ) { }
+
   filtro (link: any) {
-    console.log("Evento Componente filho", link)
     this.retornoFiltro.emit(link)
   }
 }
