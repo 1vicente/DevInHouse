@@ -8,6 +8,36 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { FiltroComponent } from './componentes/filtro/filtro.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const rotas: Routes = [
+  {
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    component: HomeComponent,
+    // children: [{
+    //     path: 'todos',
+    //   },
+    //   {
+    //     path: 'nao-lidos',
+    //   },
+    //   {
+    //     path: 'lidos',
+    //   }  ]
+  },
+  {
+    path: 'sobre',
+    component: AboutComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'inicio'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +50,8 @@ import { AboutComponent } from './pages/about/about.component';
     AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(rotas)
   ],
   providers: [],
   bootstrap: [AppComponent]
