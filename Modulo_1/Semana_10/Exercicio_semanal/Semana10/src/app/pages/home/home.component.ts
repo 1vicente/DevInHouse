@@ -11,5 +11,6 @@ export class HomeComponent {
 
   action(link: any) {
     this.retornodoFiltro = link;
+    
   }
 }
