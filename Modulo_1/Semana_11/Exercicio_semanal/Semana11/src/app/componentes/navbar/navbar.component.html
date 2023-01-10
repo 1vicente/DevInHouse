@@ -25,3 +25,15 @@
     <h2 *ngSwitchCase="'preco'">Estou na página de Preços</h2>
     <h2 *ngSwitchCase="'info'">Estou na página de Informações</h2>
 </div>
+
+<ul>
+    <li *ngFor="let array of arrayFotos">    
+        <div class="card" style="width: 18rem;">
+            <img src="{{ array.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">{{ array.description }}</p>
+            </div>
+        </div>
+    </li>
+</ul>
