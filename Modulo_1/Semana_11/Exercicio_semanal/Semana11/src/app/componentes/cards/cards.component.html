@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body bg-primary">
+        <h5 class="card-title text-light"> 
+            <ng-content select=".title"></ng-content> 
+        </h5>
+      <h6 class="card-subtitle mb-2 text-muted text-light"> 
+        <ng-content select=".subtitle" class="card-subtitle mb-2 text-muted"></ng-content> 
+      </h6>
+      <p class="card-text bg-primary-subtle">
+        <ng-content select=".card-text" class="card-text"></ng-content>
+      </p>
+    </div>
+</div>

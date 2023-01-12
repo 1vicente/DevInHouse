@@ -8,6 +8,7 @@ import { CaptalizePhillipsPipe } from './pipes/captalize-phillips.pipe';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { NgContentComponent } from './compnentes/ng-content/ng-content.component';
+import { CardsComponent } from './componentes/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgContentComponent } from './compnentes/ng-content/ng-content.component
     CaptalizePhillipsPipe,
     NavbarComponent,
     ModalComponent,
-    NgContentComponent
+    NgContentComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
