@@ -11,6 +11,7 @@ import { NgContentComponent } from './compnentes/ng-content/ng-content.component
 import { CardsComponent } from './componentes/cards/cards.component';
 import { InputValidadoComponent } from './componentes/input-validado/input-validado.component';
 import { FormsModule } from '@angular/forms';
+import { ListaComponent } from './pages/lista/lista.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     ModalComponent,
     NgContentComponent,
     CardsComponent,
-    InputValidadoComponent
+    InputValidadoComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

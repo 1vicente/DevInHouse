@@ -1,0 +1,25 @@
+<p>Título do Card</p>
+<input type="text" [(ngModel)]="tituloCard">
+<p>Descrição do Card</p>
+<input type="text" [(ngModel)]="descricaoCard">
+
+<button (click)="salva(tituloCard,descricaoCard)"> Salvar </button>
+
+
+
+<div *ngIf="cardOn; else mostrarCards">
+    Sem cards cadastrado.
+</div>
+<ng-template #mostrarCards >
+    <div *ngFor="let item of cards">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">{{ item.titulo }}</h5>
+            <p class="card-text">{{ item.descricao }}</p>
+            </div>
+        </div>
+    </div>     
+</ng-template>
+
+
+
