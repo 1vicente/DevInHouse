@@ -9,6 +9,8 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { NgContentComponent } from './compnentes/ng-content/ng-content.component';
 import { CardsComponent } from './componentes/cards/cards.component';
+import { InputValidadoComponent } from './componentes/input-validado/input-validado.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { CardsComponent } from './componentes/cards/cards.component';
     NavbarComponent,
     ModalComponent,
     NgContentComponent,
-    CardsComponent
+    CardsComponent,
+    InputValidadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

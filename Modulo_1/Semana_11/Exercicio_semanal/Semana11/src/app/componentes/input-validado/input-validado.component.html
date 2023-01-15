@@ -1,0 +1,17 @@
+
+
+
+<form >
+    <h1>Insira um número</h1>
+    <input type="number" [(ngModel)]="valorHtml" name="buceta">
+    
+   <div *ngIf="valorHtml<10; else valorMaior" class="text-success">
+        Número menor que 10.
+    </div>
+    <ng-template #valorMaior >
+        <div class="text-danger">
+            Número maior que 10.
+        </div>        
+    </ng-template>
+
+</form>
