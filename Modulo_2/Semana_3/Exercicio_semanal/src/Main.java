@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -22,20 +25,35 @@ public class Main {
 //        System.out.println(clinicaMain.getLogradouro());
 
 
-// IMC
-        Imc calculoImc  = new Imc();
+//// IMC
+//        Imc calculoImc  = new Imc();
+//
+//        System.out.println("Digite o seu peso");
+//        Double peso = scanner.nextDouble();
+//        System.out.println("Digite sua altura");
+//        Double altura = scanner.nextDouble();
+//
+//        System.out.println(calculoImc.calculaImc(altura,peso));
+
 
         System.out.println("Digite o seu peso");
-        Double peso = scanner.nextDouble();
+        Double pesoPessoa = 33.3;
         System.out.println("Digite sua altura");
-        Double altura = scanner.nextDouble();
+        Double alturaPessoa = 1.50;
+        System.out.println("Digite sua Idade");
+        int idadePessoa = 80 ;
 
-        System.out.println(calculoImc.calculaImc(altura,peso));
+        Clientes clientes1 = new Clientes(pesoPessoa, alturaPessoa, idadePessoa);
+        Clientes clientes2 = new Clientes(33d, 33d, 33);
 
+        List<Clientes> listaClientes = new ArrayList<>();
+
+        listaClientes.add(clientes1);
+        listaClientes.add(clientes2);
+
+        for (Clientes clientes : listaClientes) {
+            System.out.println(clientes.getPeso() + " " + clientes.getIdade() + " " + clientes.getAltura());
+        }
 
     }
-
-
-
-
 }
