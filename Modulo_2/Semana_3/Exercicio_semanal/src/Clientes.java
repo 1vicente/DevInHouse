@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Clientes {
 
     private Double peso;
@@ -25,5 +27,10 @@ public class Clientes {
 
     public Integer getIdade() {
         return idade;
+    }
+
+    public Double tratamento(){
+        peso -= 5d;
+        return this.peso - 5;
     }
 }

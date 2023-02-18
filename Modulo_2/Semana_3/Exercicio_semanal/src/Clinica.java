@@ -8,7 +8,7 @@ public class Clinica {
     private String codigo;
 
     public Clinica(String nomeDono, Clientes clientes){
-        
+
     }
 
 

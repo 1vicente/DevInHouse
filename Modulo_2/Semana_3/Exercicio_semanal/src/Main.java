@@ -59,5 +59,13 @@ public class Main {
             System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
         }
 
+        System.out.println("Tratamento");
+        System.out.println("Tramento CLiente 1: " + clientes2.tratamento());
+
+        for (Clientes clientes : clinica.getListaClientes()) {
+            System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
+        }
     }
+
+
 }
