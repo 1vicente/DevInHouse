@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Clinica {
     private String nome;
     private String cnpj;
     private String logradouro;
     private String codigo;
+
+    private List<Clientes> listaClientes = new ArrayList<>();
 
     public String getNome() {
         return nome;
@@ -34,5 +39,13 @@ public class Clinica {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    public void setListaClientes(Clientes clientes) {
+        this.listaClientes.add(clientes);
+    }
+
+    public List<Clientes> getListaClientes() {
+        return listaClientes;
     }
 }

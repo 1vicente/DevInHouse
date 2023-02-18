@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Clientes {
 
     private Double peso;
@@ -24,11 +21,5 @@ public class Clientes {
 
     public Integer getIdade() {
         return idade;
-    }
-
-    public void terra(Double peso, Double altura, Integer idade) {
-        this.peso = peso;
-        this.altura = altura;
-        this.idade = idade;
     }
 }

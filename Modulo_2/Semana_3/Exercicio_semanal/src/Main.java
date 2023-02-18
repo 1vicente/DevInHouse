@@ -48,11 +48,15 @@ public class Main {
 
         List<Clientes> listaClientes = new ArrayList<>();
 
-        listaClientes.add(clientes1);
+        Clinica clinica = new Clinica();
+
+        clinica.setListaClientes(clientes2);
+        clinica.setListaClientes(clientes1);
+
         listaClientes.add(clientes2);
 
-        for (Clientes clientes : listaClientes) {
-            System.out.println(clientes.getPeso() + " " + clientes.getIdade() + " " + clientes.getAltura());
+        for (Clientes clientes : clinica.getListaClientes()) {
+            System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
         }
 
     }
