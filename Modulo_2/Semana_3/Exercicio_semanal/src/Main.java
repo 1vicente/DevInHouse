@@ -36,6 +36,7 @@ public class Main {
 //        System.out.println(calculoImc.calculaImc(altura,peso));
 
 
+        String nomePessoa = "vicente";
         System.out.println("Digite o seu peso");
         Double pesoPessoa = 33.3;
         System.out.println("Digite sua altura");
@@ -43,34 +44,25 @@ public class Main {
         System.out.println("Digite sua Idade");
         int idadePessoa = 80 ;
 
-        Clientes clientes1 = new Clientes(pesoPessoa, alturaPessoa, idadePessoa);
-        Clientes clientes2 = new Clientes(33d, 33d, 33);
+        Clientes clientes1 = new Clientes(nomePessoa, pesoPessoa, alturaPessoa, idadePessoa);
+        Clientes clientes2 = new Clientes("Vicente2", 33d, 33d, 33);
 
-        List<Clientes> listaClientes = new ArrayList<>();
 
         Clinica clinica = new Clinica("Nome do dono", clientes1);
 
         clinica.setListaClientes(clientes2);
         clinica.setListaClientes(clientes1);
 
-        listaClientes.add(clientes2);
-
-        for (Clientes clientes : clinica.getListaClientes()) {
-            System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
-        }
+        clinica.listaClientes();
 
         System.out.println("Tratamento");
         System.out.println("Tramento CLiente 1: " + clientes2.tratamento());
 
-        for (Clientes clientes : clinica.getListaClientes()) {
-            System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
-        }
+        clinica.listaClientes();
 
         System.out.println(clinica.tratamentoCliente(0,10d));
 
-        for (Clientes clientes : clinica.getListaClientes()) {
-            System.out.println("Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
-        }
+        clinica.listaClientes();
     }
 
 

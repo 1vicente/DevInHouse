@@ -6,10 +6,13 @@ public class Clientes {
     private Double altura;
     private Integer idade;
 
-    public Clientes(Double peso, Double altura, Integer idade){
+    private String nome;
+
+    public Clientes(String nome, Double peso, Double altura, Integer idade){
         this.peso = peso;
         this.altura = altura;
         this.idade = idade;
+        this.nome = nome;
     }
 
     public Clientes(Double peso, Double altura){
@@ -23,6 +26,10 @@ public class Clientes {
 
     public Double getAltura() {
         return altura;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public Integer getIdade() {

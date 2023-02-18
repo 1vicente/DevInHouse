@@ -65,4 +65,12 @@ public class Clinica {
         }
     }
 
+    public void listaClientes () {
+        for (Clientes clientes : this.listaClientes) {
+            System.out.println("Nome: " + clientes.getNome() + " - Peso: " + clientes.getPeso() + " - Altura: " + clientes.getAltura() + " - Idade: " + clientes.getIdade());
+        }
+    }
+
+
+
 }
