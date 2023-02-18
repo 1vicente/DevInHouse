@@ -7,6 +7,11 @@ public class Clinica {
     private String logradouro;
     private String codigo;
 
+    public Clinica(String nomeDono, Clientes clientes){
+        
+    }
+
+
     private List<Clientes> listaClientes = new ArrayList<>();
 
     public String getNome() {

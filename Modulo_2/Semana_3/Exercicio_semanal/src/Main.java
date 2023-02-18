@@ -48,7 +48,7 @@ public class Main {
 
         List<Clientes> listaClientes = new ArrayList<>();
 
-        Clinica clinica = new Clinica();
+        Clinica clinica = new Clinica("Nome do dono", clientes1);
 
         clinica.setListaClientes(clientes2);
         clinica.setListaClientes(clientes1);
