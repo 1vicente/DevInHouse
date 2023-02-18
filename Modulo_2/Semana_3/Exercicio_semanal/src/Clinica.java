@@ -53,4 +53,16 @@ public class Clinica {
     public List<Clientes> getListaClientes() {
         return listaClientes;
     }
+
+    public String tratamentoCliente (int id, Double pesoReduzido){
+
+        Clientes cliente = listaClientes.get(id);
+        if (cliente.getPeso() > 0 ) {
+            cliente.setPeso(cliente.getPeso() - pesoReduzido);
+            return "Peso reduzido";
+        } else {
+            return "Cliente não encontrado";
+        }
+    }
+
 }

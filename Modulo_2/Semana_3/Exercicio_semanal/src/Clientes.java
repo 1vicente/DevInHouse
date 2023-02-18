@@ -29,6 +29,10 @@ public class Clientes {
         return idade;
     }
 
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+
     public Double tratamento(){
         peso -= 5d;
         return this.peso - 5;
