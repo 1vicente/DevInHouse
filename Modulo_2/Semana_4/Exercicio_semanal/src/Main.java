@@ -1,10 +1,10 @@
-import ex3.Produto;
+import ex5.Aluno;
 
 public class Main {
     public static void main(String[] args) {
 
-        Produto teste = new Produto();
+        Aluno teste = new Aluno();
 
-        System.out.println(teste.calcularValorcomImposto());
+        System.out.println(teste.registrar());
     }
 }
