@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ecf6d58-e55c-4cd4-b7a4-50a214f698dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/devinhouse/src/main/java/semana10/devinhouse/controller/FormularioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/devinhouse/src/main/java/semana10/devinhouse/controller/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/devinhouse/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/config/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/controller/AutenticadorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/controller/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/model/Perfil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/model/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/repository/ProdutoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/jwt/src/main/java/jwt/jwt/service/ProdutoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/spring-security/src/main/java/springsecurity/springsecurity/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/spring-security/src/main/java/springsecurity/springsecurity/controller/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Aulas/spring-security/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Exercicio_semana/semanal/src/main/java/com/exercicio/semanal/controller/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Exercicio_semana/semanal/src/main/java/com/exercicio/semanal/model/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Exercicio_semana/semanal/src/main/java/com/exercicio/semanal/repository/ProdutoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semana_10/Exercicio_semana/semanal/src/main/java/com/exercicio/semanal/service/ProdutoService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2O6EhhBjrQSE2fjtfqtaeneNgNQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/vicen/IdeaProjects/DevInHouse/Modulo_2/Semana_9/Exercicio_semana/hibernate_jpa",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ecf6d58-e55c-4cd4-b7a4-50a214f698dd" name="Changes" comment="" />
+      <created>1680872752033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680872752033</updated>
+    </task>
+    <servers />
+  </component>
+</project>
