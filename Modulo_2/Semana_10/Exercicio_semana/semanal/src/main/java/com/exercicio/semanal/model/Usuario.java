@@ -1,14 +1,13 @@
 package com.exercicio.semanal.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 import javax.persistence.*;
 
+@Data
 @Entity
-@Table(name="es_usuarios")
+@Table(name="esp_usuarios")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -20,6 +19,8 @@ public class Usuario {
     private Integer id;
 
     private String nome;
-    private String senha;
+    private String login;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String password;
 
 }
