@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UsuarioService {
@@ -24,6 +25,10 @@ public class UsuarioService {
 
     public Usuario adicionarUsuario(Usuario usuario) {
         return repository.save(usuario);
+    }
+
+    public Optional<Usuario> findByLogin(String login) {
+        return repository.findByLogin(login);
     }
 
 

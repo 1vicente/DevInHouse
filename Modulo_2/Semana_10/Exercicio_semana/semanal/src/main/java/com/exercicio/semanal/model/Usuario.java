@@ -7,9 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="esp_usuarios")
-@Getter
-@Setter
+@Table(name="espi_usuarios")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Usuario {
@@ -17,8 +15,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private String nome;
+    @Column(unique = true)
     private String login;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
