@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecf6d58-e55c-4cd4-b7a4-50a214f698dd" name="Changes" comment="" />
+    <list default="true" id="70f1bb2d-78f3-4303-ad61-d13d6eed80c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +12,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="2O6EhhBjrQSE2fjtfqtaeneNgNQ" />
+  <component name="ProjectId" id="2OG0221hrBuFg1x5vEduTjEJlCu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,20 +21,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/vicen/IdeaProjects/DevInHouse/Modulo_2/Semana_9/aula/loja_aulas",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "C:/Users/vicen/IdeaProjects/DevInHouse/Modulo_2/Semana_9/Exercicio_semana"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ecf6d58-e55c-4cd4-b7a4-50a214f698dd" name="Changes" comment="" />
-      <created>1680872752033</created>
+      <changelist id="70f1bb2d-78f3-4303-ad61-d13d6eed80c8" name="Changes" comment="" />
+      <created>1681171400731</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680872752033</updated>
+      <updated>1681171400731</updated>
     </task>
     <servers />
   </component>
